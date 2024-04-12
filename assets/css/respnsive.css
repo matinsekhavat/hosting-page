@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* font-size= 10px */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (max-width: 430px) {
+  .client__company {
+    width: 38%;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .footer__data {
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 57.6rem;
+  }
+  .hosting__bundle {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hosting__item {
+    min-height: max-content;
+    margin: 4rem 0;
+    border: none;
+  }
+  .hosting__item--bottom {
+    max-height: 14rem;
+    /* transition: all 1s linear; */
+
+    overflow: hidden;
+  }
+  .hosting__item:hover {
+    border-top: 1rem solid var(--primary-blue);
+    transition: all 0.3s ease;
+  }
+  .hosting__item:hover > .hosting__item--bottom {
+    max-height: 20rem;
+    transition: all 0.5s ease;
+  }
+  .client__company {
+    max-width: 30%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 76.8rem;
+  }
+  .header__hero {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 8rem;
+    column-gap: 2rem;
+    align-items: center;
+  }
+  .header__images {
+    order: 2;
+  }
+  .header__holder--btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__input {
+    grid-template-columns: 3fr 1fr;
+  }
+  .header__title {
+    font-size: 4rem;
+  }
+  .header__sub {
+    font-size: 2.1rem;
+  }
+  .header__btn {
+    margin-right: 1rem;
+  }
+  .costumers__feedback {
+    flex-direction: row;
+  }
+  .customers__grid {
+    gap: 5rem;
+  }
+  .client__company {
+    max-width: 23%;
+  }
+  .footer__object {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__logos--holder {
+    width: 33%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 99.2rem;
+  }
+  .header__menu {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.5rem;
+    align-items: baseline;
+  }
+  .fa.fa-bars {
+    display: none;
+  }
+
+  .header__top {
+    padding-top: 0;
+  }
+  .header__items {
+    font-size: 1.5rem;
+    padding: 0.2px 3.5rem;
+  }
+  .header__item {
+    color: #fff;
+    text-decoration: none;
+  }
+  .header__items:nth-child(1) {
+    background-color: var(--primary-blue);
+    padding: 4rem 1.8rem 1.5rem 1.8rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  .header__btn {
+    text-decoration: none;
+    font-family: var(--primary-font-400);
+    background-color: #fff;
+    padding: 1.3rem 1.7rem;
+    border-radius: 0.5rem;
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+  }
+  .header__btn:hover {
+    background-color: var(--primary-blue);
+    color: #fff;
+    transition: all 0.3s linear;
+  }
+  .fa.fa-user {
+    margin-left: 1rem;
+  }
+  .header__holder--btn {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: baseline;
+  }
+  .header__btn--availability {
+    width: 30%;
+  }
+  .header__sub {
+    padding: 1.8rem 0 0.4rem;
+  }
+  .service__items--holder {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    align-items: center;
+  }
+  .service__images {
+    order: 2;
+  }
+  .service__title {
+    font-size: 3rem;
+    margin-bottom: 0.7rem;
+  }
+  .service__sub {
+    font-size: 2.2rem;
+  }
+  .deploy__plans {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    padding-bottom: 3rem;
+  }
+  .hosting__bundle {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__object {
+    grid-template-columns: repeat(3, 1fr) 1.3fr;
+  }
+
+  .footer__logos--holder {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 140rem;
+  }
+  .hosting__bundle {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 140rem;
+  }
+}
+
+/* 
+
+- Grid System
+
+*/
+@media only screen and (max-width: 436px) {
+  .client__company {
+    max-width: 100%;
+  }
+}
